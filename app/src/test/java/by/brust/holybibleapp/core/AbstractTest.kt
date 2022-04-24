@@ -36,7 +36,7 @@ class AbstractTest {
         }
     }
 
-    private interface DataToDomain : Abstract.Mapper {
+    private interface DataToDomain : Abstract.Mapper<Any?, Any?> {
         fun map(textOne: String, textTwo: String): DomainObject
         fun map(exception: Exception): DomainObject
 
@@ -65,7 +65,7 @@ class AbstractTest {
         }
     }
 
-    private interface DomainToUIMapper: Abstract.Mapper
+    private interface DomainToUIMapper: Abstract.Mapper<Any?, Any?>
 
-    private sealed class UIObject: Abstract.Object<Unit, Abstract.Mapper.Empty>()
+    private sealed class UIObject: Abstract.Object<Unit, Abstract.Mapper<Any?, Any?>.Empty>()
 }
