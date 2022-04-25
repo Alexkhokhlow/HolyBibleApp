@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">HolyBibleApp</string>
+    <string name="no_connection_message">No Connection</string>
+    <string name="service_unavalable_message">Service unavalable</string>
+    <string name="something_went_wrong">generic error</string>
 </resources>
