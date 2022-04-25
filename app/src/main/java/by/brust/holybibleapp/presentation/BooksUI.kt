@@ -2,5 +2,5 @@ package by.brust.holybibleapp.presentation
 
 import by.brust.holybibleapp.core.Abstract
 
-sealed class BookUI : Abstract.Object<Unit, Abstract.Mapper<Any?, Any?>.Empty>() {
+sealed class BooksUI : Abstract.Object<Unit, Abstract.Mapper.Empty>() {
 }
